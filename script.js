@@ -17,7 +17,7 @@ nextEl.addEventListener("click", () => {
 })
 
 function updateGallery() {
-    imageContainerEl.computedStyleMap.transform = `perspective(1000px) rotateY(${x}deg)`;
+    imageContainerEl.style.transform = `perspective(1000px) rotateY(${x}deg)`;
     timer = setTimeout(() => {
         x = x - 45;
         updateGallery();
